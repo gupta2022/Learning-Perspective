@@ -1,15 +1,17 @@
-
+#!/usr/bin/python
 import nltk
-    # nltk.download('punkt')
-    # nltk.download('averaged_perceptron_tagger')
-    # nltk.download('brown')
-    # pip install textblob
+import sys
 import textblob
-text1=open('sample.txt')
+import io
+reload(sys)
+sys.setdefaultencoding('utf-8')
+
+
+text1=io.open('sample.txt', 'r', encoding='utf-8')
 text=text1.read()
-#print(text)
+print(text)
 blob=textblob.TextBlob(text)
 
-#print(blob)
+print(blob)
 #print(blob.tags)
 print(blob.noun_phrases)

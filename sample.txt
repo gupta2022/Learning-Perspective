@@ -1,13 +1,13 @@
 What is AI ?
- Artificial Intelligence (AI) is a branch of Science which deals with helping machines
+Artificial Intelligence (AI) is a branch of Science which deals with helping machines
 find solutions to complex problems in a more human-like fashion.
- This generally involves borrowing characteristics from human intelligence, and
+This generally involves borrowing characteristics from human intelligence, and
 applying them as algorithms in a computer friendly way.
- A more or less flexible or efficient approach can be taken depending on the
+A more or less flexible or efficient approach can be taken depending on the
 requirements established, which influences how artificial the intelligent behavior
 appears
- Artificial intelligence can be viewed from a variety of perspectives.
- From the perspective of intelligence
+Artificial intelligence can be viewed from a variety of perspectives.
+From the perspective of intelligence
 artificial intelligence is making machines "intelligent" -- acting as we would
 expect people to act.
 o The inability to distinguish computer responses from human responses
@@ -15,9 +15,9 @@ is called the Turing test.
 o Intelligence requires knowledge
 o Expert problem solving - restricting domain to allow including
 significant relevant knowledge
- From a business perspective AI is a set of very powerful tools, and
+From a business perspective AI is a set of very powerful tools, and
 methodologies for using those tools to solve business problems.
- From a programming perspective, AI includes the study of symbolic
+From a programming perspective, AI includes the study of symbolic
 programming, problem solving, and search.
 o Typically AI programs focus on symbols rather than numeric
 processing.
@@ -45,11 +45,11 @@ of the more general class of objects). Examples of object-oriented languages
 are Smalltalk, Objective C, C++. Object oriented extensions to LISP (CLOS -
 Common LISP Object System) and PROLOG (L&O - Logic & Objects) are
 also used.
- Artificial Intelligence is a new electronic machine that stores large amount of
+Artificial Intelligence is a new electronic machine that stores large amount of
 information and process it at very high speed
- The computer is interrogated by a human via a teletype It passes if the human cannot
+The computer is interrogated by a human via a teletype It passes if the human cannot
 tell if there is a computer or human at the other end
- The ability to solve problems
- It is the science and engineering of making intelligent machines, especially intelligent
+The ability to solve problems
+It is the science and engineering of making intelligent machines, especially intelligent
 computer programs. It is related to the similar task of using computers to understand
 human intelligence
