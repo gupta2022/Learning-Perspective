@@ -17,22 +17,22 @@ def CountFrequency(my_list):
         else: 
             freq[item] = 1   
     if my_list == nounph:
-        with open('file1.csv', 'w', newline='') as file:
+        with open('networking1.csv', 'w', newline='') as file:
             writer = csv.writer(file)
             writer.writerow(["String ", "Count"])
             for key, value in freq.items(): 
                 print (key, value)
                 writer.writerow([key,value])
     else:
-        with open('file2.csv', 'w', newline='') as file:
+        with open('networking2.csv', 'w', newline='') as file:
             writer = csv.writer(file)
             writer.writerow(["String ", "Count"])
             for key, value in freq.items(): 
                 print (key, value)
                 writer.writerow([key,value])
 
-file1="file1.txt"
-file2="file2.txt"
+file1="networking_notes1.txt"
+file2="networking_notes2.txt"
 
 
 
