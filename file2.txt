@@ -1,0 +1,38 @@
+Predicate logic
+Propositional logic: “and, or, not” and variables.
+Propositional logic does not have quantifiers:
+“All poodles are dogs.”
+“There is at least one black swan.”
+“Only supervisors are allowed to fill in the form.”
+“No person can solve this problem.”
+These sentences cannot be expressed in propositional logic.
+
+Predicate logic Proofs Artificial intelligence
+Predicate logic
+Quantifiers: all, at least one
+First order logic: quantifiers for individuals.
+“All squirrels eat nuts.”
+Second order logic: quantifiers for predicates.
+S = “squirrels eat nuts”
+“All S involves chewing.”
+Third order logic: ...
+
+Predicate logic Proofs Artificial intelligence
+Syntax and semantics
+Predicate logic is a formal language (like a programming language)
+with rules for
+syntax (i.e. how to write expressions) and
+semantics (i.e. how to formalise the meaning of expressions).
+
+Predicate logic Proofs Artificial intelligence
+Syntax: well-formed formulas
+I logical symbols: and, or, not, all, at least one, brackets,
+variables, equality (=), true, false
+I predicate and function symbols
+(for example, Cat(x) for “x is a Cat”)
+I term: variables and functions
+(for example, Cat(x))
+I formula: any combination of terms and logical symbols
+(for example, “Cat(x) and Sleeps(x)”)
+I sentence: formulas without free variables
+(for example, “All x: Cat(x) and Sleeps(x)”)

@@ -1,0 +1,34 @@
+Predicate Logic
+The first of these, predicate logic, involves using standard forms of logical symbolism which have been familiar to philosophers and mathematicians for many decades. Most simple sentences, for example, ``Peter is generous'' or ``Jane gives a painting to Sam,'' can be represented in terms of logical formulae in which a predicate is applied to one or more arguments (the term `argument' as used in predicate logic is similar to, but not identical with, its use to refer to the inputs to a procedure in POP-11):
+
+ 
+PREDICATE  		 ARGUMENTS
+
+
+ 
+generous  		  (peter)
+
+gives     		  (jane, painting, sam)
+
+
+
+Consider the following sentence: ``Every respectable villager worships a deity.'' A moment's reflection will reveal that this is ambiguous. Is it saying that there is one single deity to which each respectable villager offers worship? Or does each worshipper have his or her own deity, to which a fellow respectable villager may or may not be also praying? With predicate logic it is easy to reveal the nature of the ambiguity, by a device known as quantification. Quantification allows one to talk in a general way about all things of a certain class or about some particular but unspecified thing of a certain class. We can, for instance, express the proposition ``All of Jane's friends are generous'' in terms of the following formula:
+
+For any X: IF friend(X,jane) THEN generous(X)
+while the sentence ``Jane has at least one friend who is generous'' can be expressed as follows:
+
+For some X: friend(X,jane) AND generous(X)
+The expressions `For any X' and `For some X' are known as quantifiers. We can now use quantification to exhibit the ambiguity of the sentence about the respectable villagers. The first reading of it can be represented as
+
+For some X: for any Y: deity(X)
+AND IF (villager(Y) AND respectable(Y)) THEN
+worships(Y,X)
+while the second can be represented as
+
+For any Y: (IF villager(Y) AND respectable(Y) THEN
+For some X: deity(X) AND worships(Y,X))
+It is thus possible to show in a clear way that the original sentence can express (at least) two quite distinct propositions. It is possible to infer from the first, but not from the second, that if Margaret and Neil are two respectable villagers, then they both worship the same entity. (In the interests of ecumenical peace, however, it is sometimes better to refrain from letting such ambiguities come out into the open!)
+
+Predicate logic has a long pedigree. Its roots go back at least as far as Aristotle, although in its current form it was developed starting in the late nineteenth century. Associated with it are techniques for the analysis of many conceptual structures in our common thought. Because these analytical techniques are well-understood, and because it is relatively easy to express the formulae of predicate logic in AI languages such as LISP or POP-11, it has been a very popular knowledge representation symbolism within AI. Predicate logic also embodies a set of systematic procedures for proving that certain formulae can or cannot be logically derived from others and such logical inference procedures have been used as the backbone for problem-solving systems in AI. (For an account of predicate logic in AI see, for example, Rich, 1983.) Predicate logic is in itself an extremely formal kind of representation mechanism. Its supporters believe, however, that it can be used to fashion conceptual tools which reproduce much of the subtlety and nuance of ordinary informal thinking.
+
+A popular method for incorporating predicate logic in AI programs has involved a machine-based inference procedure called resolution, first proposed by J. A. Robinson (1965). This makes it relatively easy to represent expert, or commonsense, knowledge in terms of a set of axioms expressed in a special form of predicate calculus formulae and then derive consequences from these axioms. Indeed an AI programming language has been developed called Prolog (PROgramming in LOGic) which employs a resolution inference mechanism together with a restricted form of predicate logic (Clocksin and Mellish, 1981) and its proponents claim that it is a powerful tool for building knowledge-based systems. For example, a large section of the recently passed British Nationalities Act has been translated into the logical symbolism of Prolog, allowing inferences to be drawn on whether or not a particular person can argue entitlement to a passport under the labyrinthine provisions of the Act (Sergot et al., 1986).
