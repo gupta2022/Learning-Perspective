@@ -23,8 +23,11 @@ def CountFrequency(my_list):
             for key, value in freq.items(): 
                 print (key, value)
                 writer.writerow([key,value])
-    else:
+    elif my_list== nounph2:
         with open('networking2.csv', 'w', newline='') as file:
+            writer = csv.writer(file)
+    else:
+        with open('ncert_networking.csv', 'w', newline='') as file:
             writer = csv.writer(file)
             writer.writerow(["String ", "Count"])
             for key, value in freq.items(): 
@@ -34,7 +37,7 @@ def CountFrequency(my_list):
 file1="networking_notes1.txt"
 file2="networking_notes2.txt"
 
-
+file3="ncert_networking.txt"
 
 text1=open(file1, 'r', encoding='utf-8')
 text=text1.read()
@@ -56,3 +59,11 @@ blob2=textblob.TextBlob(text)
 #print(blob.noun_phrases)
 nounph2=blob2.noun_phrases
 CountFrequency(nounph2)
+
+text3=open(file3, 'r', encoding='utf-8')
+text=text3.read()
+print(text)
+blob2=textblob.TextBlob(text)
+#print(blob.noun_phrases)
+nounph3=blob2.noun_phrases
+CountFrequency(nounph3)
