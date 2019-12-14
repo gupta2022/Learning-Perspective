@@ -23,9 +23,13 @@ def CountFrequency(my_list):
             for key, value in freq.items(): 
                 print (key, value)
                 writer.writerow([key,value])
-    elif my_list== nounph2:
+    elif my_list == nounph2:
         with open('networking2.csv', 'w', newline='') as file:
             writer = csv.writer(file)
+            writer.writerow(["String ", "Count"])
+            for key, value in freq.items(): 
+                print (key, value)
+                writer.writerow([key,value])
     else:
         with open('ncert_networking.csv', 'w', newline='') as file:
             writer = csv.writer(file)
